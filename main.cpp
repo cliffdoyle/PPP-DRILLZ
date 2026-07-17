@@ -25,8 +25,18 @@ int main()
     // poly.add(Point{350, 100});
     // poly.add(Point{400, 200});
     // poly.set_color(Color::red);
-    Axis xa{Axis::x, Point{20,399},280,10,"x axis"};
+    Axis xa{Axis::x, Point{20, 300}, 280, 10, "x axis"};
+    //  xa.set_color(Color::yellow);
+
+    Axis ya{Axis::y, Point{20, 300}, 280, 10, "y axis"};
+    ya.set_color(Color::cyan);
+    // choose a color for the y axis
+    ya.label.set_color(Color::dark_red);
+    // choose a color for the text
+    win.attach(ya);
+    win.set_label("Y axis");
 
     win.attach(xa);
+    // win.set_label("X axis");
     win.wait_for_button();
 }
