@@ -1,0 +1,41 @@
+# Build directory (CMake output, Makefiles, object files, binaries)
+build/
+build*/
+out/
+
+# CMake generated files (in case cmake runs in-source somewhere)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+compile_commands.json
+CMakeUserPresets.json
+
+# Qt generated files (moc, uic, rcc — if autogen runs outside build/)
+*_autogen/
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+
+# Compiled binaries / objects
+*.o
+*.obj
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+a.out
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# OS junk
+.DS_Store
+Thumbs.db
